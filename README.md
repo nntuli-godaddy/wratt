@@ -9,3 +9,4 @@ Some useful links for everyone:
 - [Group Figma](https://www.figma.com/design/wOwoPRc4faycvZOohWg0PQ/bootcamp-group-project?node-id=0-1&p=f&t=DM6WD8uldW3QTxMF-0)
 - [Group Project Docs (OFFICIAL)](https://godaddy-corp.atlassian.net/wiki/spaces/URBC/pages/3833345069/Group+Project+-+2025+Bootcamp)
 - [BootcampCartAPI (OFFICIAL)](https://github.com/thoag-godaddy/BootCampCart-API/tree/main)
+- [Web API Workshop (OFFICIAL)](https://github.com/thoag-godaddy/workshop-web-apis?tab=readme-ov-file)

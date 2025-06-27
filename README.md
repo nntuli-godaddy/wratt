@@ -24,6 +24,7 @@ I prefer VSCode to stage, and commit your changes. If you run into any issues wh
 then try synching again
 
 
+### Links to some stuf
 
 Some useful links for everyone:
 - [Group Google Doc](https://docs.google.com/document/d/1M1NF-a2GxmrUhIK5CsOaiV-rZ7A3qEL6fHy4__R4Ya0/edit?tab=t.0)

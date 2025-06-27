@@ -1,6 +1,8 @@
 # bootcamp-project
 
-The official Github repo for GoDaddy bootcamp's 2025 class. Make sure to stage any commits that you'd like to add here. Some things are subject to be deleted before the deadline, so don't worry about bloat. 
+## The official Github repo for GoDaddy bootcamp's 2025 class. 
+
+Make sure to stage any commits that you'd like to add here. Some things are subject to be deleted before the deadline, so don't worry about bloat. 
 
 Some useful links for everyone:
 - [Group Google Doc](https://docs.google.com/document/d/1M1NF-a2GxmrUhIK5CsOaiV-rZ7A3qEL6fHy4__R4Ya0/edit?tab=t.0)

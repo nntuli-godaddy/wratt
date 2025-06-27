@@ -11,9 +11,10 @@ Use an IDE, PyCharm or VSCode, or even the terminal if you're feeling spicy!
 Clone the repo, make sure to add your name and email (these will be done sequentially, not all at once):
 
 
-`git config --global user.name <YOUR_NAME_HERE>\\
- git config --global user.email <YOUR_EMAIL_HERE>
-`
+`git config --global user.name <YOUR_NAME_HERE>`
+
+`git config --global user.email <YOUR_EMAIL_HERE>`
+
 
 I prefer VSCode to stage, and commit your changes. If you run into any issues while synching your commit, such as
 "local branch has diverged from main" or something like that, do this:

@@ -11,7 +11,7 @@ Use an IDE, PyCharm or VSCode, or even the terminal if you're feeling spicy!
 Clone the repo, make sure to add your name and email (these will be done sequentially, not all at once):
 
 
-`git config --global user.name <YOUR_NAME_HERE>
+`git config --global user.name <YOUR_NAME_HERE>\\
  git config --global user.email <YOUR_EMAIL_HERE>
 `
 

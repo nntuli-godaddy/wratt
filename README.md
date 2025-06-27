@@ -8,5 +8,10 @@ Some useful links for everyone:
 - [Group Google Doc](https://docs.google.com/document/d/1M1NF-a2GxmrUhIK5CsOaiV-rZ7A3qEL6fHy4__R4Ya0/edit?tab=t.0)
 - [Group Figma](https://www.figma.com/design/wOwoPRc4faycvZOohWg0PQ/bootcamp-group-project?node-id=0-1&p=f&t=DM6WD8uldW3QTxMF-0)
 - [Group Project Docs (OFFICIAL)](https://godaddy-corp.atlassian.net/wiki/spaces/URBC/pages/3833345069/Group+Project+-+2025+Bootcamp)
+
+Links you can use for reference if you're stuck:
 - [BootcampCartAPI (OFFICIAL)](https://github.com/thoag-godaddy/BootCampCart-API/tree/main)
 - [Web API Workshop (OFFICIAL)](https://github.com/thoag-godaddy/workshop-web-apis?tab=readme-ov-file)
+
+
+🤗🤗🤗🤗🤗🤗🤗🤗🤗

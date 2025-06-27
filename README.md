@@ -23,6 +23,8 @@ I prefer VSCode to stage, and commit your changes. If you run into any issues wh
 
 then try synching again
 
+*if you have any doubts, or would like some guidance, message the group on Slack!!!*
+
 
 ### Links to some stuf
 

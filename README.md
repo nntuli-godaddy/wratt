@@ -18,7 +18,9 @@ Clone the repo, make sure to add your name and email (these will be done sequent
 
 I prefer VSCode to stage, and commit your changes. If you run into any issues while synching your commit, such as
 "local branch has diverged from main" or something like that, do this:
+
 `git pull --rebase`
+
 then try synching again
 
 

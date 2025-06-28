@@ -308,12 +308,13 @@
                     "name": {
                         "type": "string"
                     },
-                    "description": {
-                        "type": "string"
-                    },
                     "price": {
                         "type": "number",
                         "format": "double"
+                    },
+                    "quantity": {
+                        "type": "integer",
+                        "format": "int32"
                     }
                 }
             }

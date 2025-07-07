@@ -4,15 +4,15 @@ import { Card, CardContent, CardActions, Typography, CardMedia } from '@mui/mate
 
 
 
-function ShopItem({ price, name, imageURL, description }) {
+function ShopItem({ key, product_id, name, description, image_url, price, onAddToCart }) {
 
     const addToCart = () => {
-        /* Insert logic here  */
+        onAddToCart({ product_id, name, price, quantity: 1 })
     }
 
     return (
         <Card style={{ height: "400px", width: "250px" }}>
-            <CardMedia sx={{height: 140}}image={imageURL} />
+            <CardMedia sx={{ height: 140 }} image={image_url} />
             <CardContent>
                 <Typography variant="h6">
                     {name}
@@ -25,7 +25,7 @@ function ShopItem({ price, name, imageURL, description }) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <button type='submit'> Add To Cart </button>
+                <button type='submit' onClick={addToCart}> Add To Cart </button>
             </CardActions>
         </Card>
     );

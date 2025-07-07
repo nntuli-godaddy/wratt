@@ -4,6 +4,13 @@
 
 Make sure to stage any commits that you'd like to add here. Some things are subject to be deleted before the deadline, so don't worry about bloat. 
 
+### CURRENT ISSUES 
+Use this space below to list some issues, or TO-DOs for the group to work on.
+List your name and issue below:
+
+- Javier: Need help revising the `cartItem` properties and `path` for both `cartItem` and `cartItem/{id}`
+
+
 ### How to contribute?
 
 Use an IDE, PyCharm or VSCode, or even the terminal if you're feeling spicy!
@@ -36,6 +43,7 @@ Some useful links for everyone:
 Links you can use for reference if you're stuck:
 - [BootcampCartAPI (OFFICIAL)](https://github.com/thoag-godaddy/BootCampCart-API/tree/main)
 - [Web API Workshop (OFFICIAL)](https://github.com/thoag-godaddy/workshop-web-apis?tab=readme-ov-file)
+- [Swagger editor](https://editor.swagger.io)
 
 
 🤗🤗🤗🤗🤗🤗🤗🤗🤗

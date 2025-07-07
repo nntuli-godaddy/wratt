@@ -312,6 +312,14 @@
                         "type": "number",
                         "format": "double"
                     },
+                    "is_on_sale": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "is_in_trash": {
+                        "type": "boolean",
+                        "default": false
+                    },
                     "quantity": {
                         "type": "integer",
                         "format": "int32"

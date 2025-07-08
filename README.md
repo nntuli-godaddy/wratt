@@ -1,8 +1,6 @@
 # wratt 
 
-## The official Github repo for GoDaddy bootcamp's 2025 class. 
-
-(JAVIER'S VERSION)
+## (JAVIER'S BRANCH)
 
 Separate the `frontend` folder and `backend` folder into different terminals for now. 
 - `cd frontend` in terminal 1

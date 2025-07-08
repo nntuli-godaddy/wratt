@@ -13,6 +13,8 @@ Separate the `frontend` folder and `backend` folder into different terminals for
 
 Make sure to stage any commits that you'd like to add here. Some things are subject to be deleted before the deadline, so don't worry about bloat. 
 
+## you don't need to read below..
+
 ### CURRENT ISSUES 
 Use this space below to list some issues, or TO-DOs for the group to work on.
 List your name and issue below:

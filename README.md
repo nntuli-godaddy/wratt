@@ -2,13 +2,26 @@
 
 ## The official Github repo for GoDaddy bootcamp's 2025 class. 
 
-Make sure to stage any commits that you'd like to add here. Some things are subject to be deleted before the deadline, so don't worry about bloat. 
+### Want to checkout a current branch?
 
-### CURRENT ISSUES 
-Use this space below to list some issues, or TO-DOs for the group to work on.
-List your name and issue below:
+Do this:
 
-- Javier: Need help revising the `cartItem` properties and `path` for both `cartItem` and `cartItem/{id}`
+- `cd` into whatever directory you want the project folder to be
+- `git clone https://github.com/nntuli-godaddy/wratt.git` (SKIP THIS IF YOU ALREADY HAVE `wratt` IN YOUR CURRENT DIRECTORY)
+- `cd wratt`
+- `ls` to check that your folder is the same as our main repo 
+- `git fetch origin`
+- `git checkout <INSERT_BRANCH_NAME>`
+- This should place you into the specified branch, so do `ls` to check that it matches.
+- Explore files/folders you'd like to work on,
+- DO BELOW IF YOU WANT TO COMMIT YOUR CHANGES
+- To add changes, do `git add <WHATEVER_FOLDER_OR_FILE>` then `git commit -m <MESSAGE>`
+- When you're ready, do `git push -u origin <INSERT_BRANCH_NAME` with the same branch name you checked out
+- Check the github repo to see your commits
+
+### Creating your own branch? 
+
+Just do it on Github through the dropdown on the left corner. Save yourself the pain. 
 
 
 ### How to contribute?

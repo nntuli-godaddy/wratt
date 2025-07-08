@@ -1,0 +1,12 @@
+body {
+  background-color:#d8c2cc;
+  color: rgb(9, 38, 84);
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2px;
+  font-style: normal;
+}
+
+a:visited {
+  color: lightgray;
+}

@@ -68,3 +68,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.checkoutContainer.card{
+  background-color: #F0EDED;
+}

@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #0070f3;
-  --background-color: #f4f7fa;
+  --primary-color: #C863DF;
+  --background-color: #F0EDED;
   --text-color: #111;
   --card-bg: #fff;
   --border-radius: 12px;
@@ -40,6 +40,7 @@
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   color: var(--text-color);
+  text-align: center;
 }
 
 .formGroup {
@@ -87,7 +88,7 @@ input:focus {
 }
 
 .button:hover {
-  background-color: #005bb5;
+  background-color: #944aa4;
 }
 
 .summary {

@@ -2,7 +2,7 @@
 
 ## The official Github repo for GoDaddy bootcamp's 2025 class. 
 
-## Want to checkout a current branch?
+### Want to checkout a current branch?
 
 Do this:
 
@@ -19,7 +19,7 @@ Do this:
 - When you're ready, do `git push -u origin <INSERT_BRANCH_NAME` with the same branch name you checked out
 - Check the github repo to see your commits
 
-## Creating your own branch? 
+### Creating your own branch? 
 
 Just do it on Github through the dropdown on the left corner. Save yourself the pain. 
 

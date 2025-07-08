@@ -9,9 +9,7 @@ Separate the `frontend` folder and `backend` folder into different terminals for
 - in terminal 2, do `docker compose up -d`, then check that my tests are good with `docker compose up --build --exit-code-from tests --abort-on-container-exit tests`
 - now, you should be able to add and delete shopItems to the cart on the local port.
 
-
-
-Make sure to stage any commits that you'd like to add here. Some things are subject to be deleted before the deadline, so don't worry about bloat. 
+# Read the main branch's README.md to learn about branches (create, checkout someone else's)
 
 ## you don't need to read below..
 

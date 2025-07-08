@@ -19,9 +19,9 @@ Do this:
 - When you're ready, do `git push -u origin <INSERT_BRANCH_NAME` with the same branch name you checked out
 - Check the github repo to see your commits
 
-## Want to create your own branch? 
+## Creating your own branch? 
 
-I find it easiest to just use my terminal. If you want to 
+Just do it on Github through the dropdown on the left corner. Save yourself the pain. 
 
 
 ### How to contribute?

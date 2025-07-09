@@ -1,6 +1,13 @@
 {
   "/_app": "pages/_app.js",
+<<<<<<< HEAD
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+=======
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/": "pages/index.js",
+  "/shop": "pages/shop.js",
+>>>>>>> origin/main
   "/cart": "pages/cart.js"
 }

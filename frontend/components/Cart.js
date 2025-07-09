@@ -29,6 +29,7 @@ function Cart({
                 }
             });
     }
+<<<<<<< HEAD
     function handleIncrease(id) {
         setCartItems(prev =>
             prev.map(item =>
@@ -47,6 +48,8 @@ function Cart({
         );
     }
 
+=======
+>>>>>>> origin/main
     const totalPrice = cartItems.map(item => item.price * item.quantity).reduce((a,b) => a + b, 0)
 
   return (
@@ -65,8 +68,11 @@ function Cart({
                     is_on_sale={cartItem.is_on_sale}
                     salePrice={cartItem.salePrice}
                     onRemoveFromCart={deleteItem}
+<<<<<<< HEAD
                     onIncrease={handleIncrease}
                     onDecrease={handleDecrease}
+=======
+>>>>>>> origin/main
                 />
                 </Grid>
             )}
@@ -75,7 +81,11 @@ function Cart({
             <Card sx={{ p: 2 }}>
                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <Typography variant="h4">
+<<<<<<< HEAD
                     Total: <b>${totalPrice}</b>
+=======
+                    Subtotal: <b>${totalPrice}</b>
+>>>>>>> origin/main
                 </Typography>
                 <Button variant="contained" color="primary">
                     Proceed to Checkout

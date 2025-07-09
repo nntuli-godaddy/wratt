@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
-import { Card, CardContent, CardActions, Button, Grid, Typography, CardMedia } from '@mui/material'
+import { Card, CardContent, CardActions, Button, Grid, Typography, CardMedia, Box } from '@mui/material'
 import CartItem from './CartItem';
 
 
@@ -38,20 +38,30 @@ function Cart({
             cartItems.map(cartItem =>
                 <Grid item xs={6}>
                 <CartItem 
-                    product_id={cartItem.product_id}
                     name={cartItem.name}
+                    description={cartItem.description}
                     id={cartItem.id}
+                    image_url={cartItem.image_url}
                     price={cartItem.price}
                     quantity={cartItem.quantity} 
+                    is_on_sale={cartItem.is_on_sale}
+                    salePrice={cartItem.salePrice}
                     onRemoveFromCart={deleteItem}
                 />
                 </Grid>
             )}
         </Grid>
-        <div style={{"padding-top": "20px"}}>
-            <Typography variant="h3">
-                Total: ${totalPrice}
-            </Typography>
+        <div style={{ paddingTop: "20px" }}>
+            <Card sx={{ p: 2 }}>
+                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <Typography variant="h4">
+                    Subtotal: <b>${totalPrice}</b>
+                </Typography>
+                <Button variant="contained" color="primary">
+                    Proceed to Checkout
+                </Button>
+                </Box>
+            </Card>
         </div>
     </div>
   );

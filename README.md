@@ -12,6 +12,7 @@ Separate the `frontend` folder and `backend` folder into different terminals for
 - BONUS: if you want to play with the postgresql database or inspect elements/delete elements, then run `docker compose exec db psql -U bootcamp -d bootcamp` in the `backend` terminal. You should already have the Docker container + images running.
 - This will spawn a shell, which you can exit with `exit`
 - Now, you can run SQL commands! To list all tables (there should be two, `databaseproducts` and `databasecartitem`), then do `\dt`.
+- Make sure to end each query with a `;`
 - Slack me if you run into trouble!
 
 # Read the main branch's README.md to learn about branches (create, checkout someone else's)

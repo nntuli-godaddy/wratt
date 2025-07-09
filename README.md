@@ -7,7 +7,12 @@ Separate the `frontend` folder and `backend` folder into different terminals for
 - `cd backend` in terminal 2
 - in terminal 1, do `npm install` then `npm run local`, it should give you the local port to check out
 - in terminal 2, do `docker compose up -d`, then check that my tests are good with `docker compose up --build --exit-code-from tests --abort-on-container-exit tests`
-- now, you should be able to add and delete shopItems to the cart on the local port.
+- now, you should be able to add and delete shopItems to the cart on the local server.
+  
+- BONUS: if you want to play with the postgresql database or inspect elements/delete elements, then run `docker compose exec db psql -U bootcamp -d bootcamp` in the `backend` terminal. You should already have the Docker container + images running.
+- This will spawn a shell, which you can exit with `exit`
+- Now, you can run SQL commands! To list all tables (there should be two, `databaseproducts` and `cartitemproduct`), then do `\dt`.
+- Slack me if you run into trouble!
 
 # Read the main branch's README.md to learn about branches (create, checkout someone else's)
 

@@ -4,7 +4,7 @@ import { Box, Typography, Paper, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
-import SocialSignInButtons from '../../components/SocialSignInButtons/SocialSignInButtons';
+
 
 const StyledContainer = styled(Box)(({ theme }) => ({
   minHeight: '100vh',
@@ -30,7 +30,8 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
 
 const SignUpPage = () => {
   const theme = useTheme();
-  const [username, setUsername] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -38,7 +39,7 @@ const SignUpPage = () => {
 
   const handleSignUp = () => {
     // Add your signup logic here
-    navigate('/confirm-email');
+    navigate('/signin');
   };
 
   const handleSignIn = () => {
@@ -55,11 +56,20 @@ const SignUpPage = () => {
           Enter your details to create an account
         </Typography>
 
-        <CustomInput
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          placeholder="Username"
-        />
+        <Box sx={{ display: 'flex', gap: 2, width: '100%' }}>
+          <CustomInput
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            placeholder="First Name"
+            sx={{ flex: 1 }}
+          />
+          <CustomInput
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            placeholder="Last Name"
+            sx={{ flex: 1 }}
+          />
+        </Box>
 
         <CustomInput
           value={email}
@@ -88,7 +98,7 @@ const SignUpPage = () => {
           fullWidth={true}
         />
 
-        <SocialSignInButtons />
+
 
         <Typography variant="body1" align="center">
           Already have an account?{' '}

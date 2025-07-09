@@ -4,7 +4,7 @@ import { Box, Typography, Paper, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
-import SocialSignInButtons from '../../components/SocialSignInButtons/SocialSignInButtons';
+
 
 const StyledContainer = styled(Box)(({ theme }) => ({
   minHeight: '100vh',
@@ -50,6 +50,7 @@ const SignInPage = () => {
   return (
     <StyledContainer>
       <StyledPaper>
+        <img src="/Logo.png" alt="Logo" style={{ width: '100px', height: 'auto', marginBottom: '20px' }} />
         <Typography variant="h3" component="h1" gutterBottom>
           Sign In
         </Typography>
@@ -57,7 +58,7 @@ const SignInPage = () => {
         <CustomInput
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          placeholder="Username"
+          placeholder="Email"
         />
 
         <CustomInput
@@ -80,7 +81,7 @@ const SignInPage = () => {
           fullWidth={true}
         />
 
-        <SocialSignInButtons />
+
 
         <Typography variant="body1" align="center">
           Don't have an account?{' '}

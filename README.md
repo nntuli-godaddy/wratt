@@ -7,6 +7,7 @@ You are now able to run `docker compose up --build` in root and start up both th
 No need to make two separate terminals! YES.
 
 
+## PRE-COMMIT (OLD VERSION)
 Separate the `frontend` folder and `backend` folder into different terminals for now. 
 - `cd frontend` in terminal 1
 - `cd backend` in terminal 2

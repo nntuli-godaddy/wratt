@@ -115,7 +115,7 @@ class DatabaseCartItem(BaseModel):
                 quantity=2,
             ),
         ]
-        DatabaseProducts.bulk_create(cart_items)
+        DatabaseCartItem.bulk_create(cart_items)
 
 
 

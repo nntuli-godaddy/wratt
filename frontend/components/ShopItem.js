@@ -21,7 +21,7 @@ function ShopItem({
 
   return (
     <Card style={{height: "400px"}} sx={"background-color:#e4e2cc"}>
-    <CardMedia sx ={{height:170}} image={image_url}/>
+    <CardMedia style={{ height: "140px"}} image={image_url}/>
     <CardContent sx={"background-color:#f9e5bc"}>
       <Typography variant="h3" fontWeight={60} fontStyle={'italic'}>{name}</Typography> 
       <Typography variant = "h4" fontSize={20}> {description}</Typography>

@@ -24,7 +24,7 @@
         "url": "http://swagger.io"
     },
     "paths": {
-        "/cartItems": {
+        "/cartitems": {
           "post": {
               "tags": [
                 "cartItem"
@@ -86,7 +86,7 @@
             }
           }
         },
-        "/cartItems/{id}": {
+        "/cartitems/{id}": {
           "parameters": [
                 {
                     "name": "id",

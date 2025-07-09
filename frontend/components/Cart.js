@@ -37,14 +37,14 @@ function Cart({
         {
             cartItems.map(cartItem =>
                 <Grid item xs={6}>
-                <CartItem 
-                    product_id={cartItem.product_id}
-                    name={cartItem.name}
-                    id={cartItem.id}
-                    price={cartItem.price}
-                    quantity={cartItem.quantity} 
-                    onRemoveFromCart={deleteItem}
-                />
+                    <CartItem 
+                        product_id={cartItem.product_id}
+                        name={cartItem.name}
+                        id={cartItem.id}
+                        price={cartItem.price}
+                        quantity={cartItem.quantity} 
+                        onRemoveFromCart={deleteItem}
+                    />
                 </Grid>
             )}
         </Grid>

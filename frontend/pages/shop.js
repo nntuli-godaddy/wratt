@@ -27,13 +27,16 @@ const itemList = [prop1, prop2];
 export const ShopPage = () => (
   <Container>
     <Head title='Home'/>
-    <div>
-      <Typography variant="h3" fontWeight={400} fontSize={60}>My Shop</Typography>
+
+    <div style={{"padding-bottom": "10px"}}>
+      <Typography variant="h3">My Shop</Typography>   
+    </div>
+
+    <div style={{"padding-bottom": "20px"}}>
       <Link href="/cart" style ={{color: 'black'}} fontWeight={100} fontSize={200}>View cart</Link>
     </div>
-    <div>
-      <ShopItemList itemsList={itemList} />
-    </div>
+
+    <ShopItemList itemsList={itemList} />
   </Container>
 );
 

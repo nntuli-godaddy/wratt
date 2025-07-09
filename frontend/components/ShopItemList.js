@@ -36,10 +36,10 @@ function ShopItemList() {
     }; 
 
   return (
-    <Grid container direction="column" spacing={1}>
+    <Grid container direction="row" spacing={1}>
        {
         products.map(product=> (
-        (<Grid >
+        (<Grid item xs>
             <ShopItem  
                 key={product.id}
                 product_id={product.id}

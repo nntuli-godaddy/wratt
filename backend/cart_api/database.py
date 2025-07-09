@@ -49,6 +49,10 @@ class DatabaseProducts(BaseModel):
                 price=14.99,
                 is_on_sale=False,
                 sale_price=8.99,
+<<<<<<< HEAD
+                image_url="https://img1.wsimg.com/cdn/Image/All/AllChannelsFoS/1/en-US/44957d35-8edb-43cf-b518-457ff48a7e16/Product-grid-WDS.jpg"
+=======
+>>>>>>> origin/main
             ),
             DatabaseProducts(
                 id=2,
@@ -57,6 +61,10 @@ class DatabaseProducts(BaseModel):
                 price=29.99,
                 is_on_sale=True,
                 sale_price=19.99,
+<<<<<<< HEAD
+                image_url="https://img1.wsimg.com/cdn/Image/All/AllChannelsFoS/1/en-US/4626b5ac-8ac0-4e88-ae38-dd94cb12a89d/Product-grid-Email.jpg"
+=======
+>>>>>>> origin/main
             ),
             DatabaseProducts(
                 id=3,
@@ -64,6 +72,10 @@ class DatabaseProducts(BaseModel):
                 description="Purchase a .com domain",
                 price=9.99,
                 is_on_sale=False,
+<<<<<<< HEAD
+                image_url="https://img1.wsimg.com/cdn/Image/All/AllChannelsFoS/1/en-US/c8d98599-46cc-412d-bbb5-d766bb0e5a05/Product-grid-SSL.jpg"
+=======
+>>>>>>> origin/main
             ),
             DatabaseProducts(
                 id=4,
@@ -71,6 +83,10 @@ class DatabaseProducts(BaseModel):
                 description="Purchase a .org domain",
                 price=8.99,
                 is_on_sale=False,
+<<<<<<< HEAD
+                image_url="https://img1.wsimg.com/cdn/Image/All/AllChannelsFoS/1/en-US/8f679b96-df22-41fc-afd8-854d47a1c634/Product-grid-Hosting.jpg"
+=======
+>>>>>>> origin/main
             ),
             DatabaseProducts(
                 id=5,
@@ -79,6 +95,10 @@ class DatabaseProducts(BaseModel):
                 price=8.99,
                 is_on_sale=True,
                 sale_price=4.99,
+<<<<<<< HEAD
+                image_url="https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/3b91b99f-57eb-44bd-b2e1-1cfd6529bbfb/feat-ols-your-store-your-way.jpg?impolicy=cms-feature-module"
+=======
+>>>>>>> origin/main
             ),
         ]
         DatabaseProducts.bulk_create(products)

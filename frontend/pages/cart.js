@@ -7,8 +7,13 @@ import CartItem from '../components/CartItem'
 import { Container, Typography } from '@mui/material'
 const testItem = {
   id: 1,
+<<<<<<< HEAD
+  name: "Domain - .com",
+  description: "Purchase a .co domain to start your website",
+=======
   name: "Test Product",
   description: "Test description",
+>>>>>>> origin/main
   price: 29.99,
   quantity: 2,
   is_on_sale: true,

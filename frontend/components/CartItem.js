@@ -23,7 +23,7 @@ function CartItem({
         display: 'flex',
         p: 2,
         mb: 3,
-        alignItems: 'flex-start',
+        alignItems: 'center',
         borderRadius: 3,
         boxShadow: 3,
         transition: '0.3s',
@@ -35,7 +35,7 @@ function CartItem({
     >
       <CardMedia
         component="img"
-        sx={{ width: 250, pt: 2}}
+        sx={{ width: 250, pt: 2 }}
         image={image_url}
         alt={name}
       />

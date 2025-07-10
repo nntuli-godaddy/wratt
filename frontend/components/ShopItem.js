@@ -16,7 +16,7 @@ function ShopItem({
 
   const addToCart = () => {
     /* Insert logic here  */
-    onAddToCart({ product_id, name, price, quantity: 1 })
+    onAddToCart({ product_id, name, description, image_url, price, is_on_sale, sale_price, quantity: 1 })
   }
 
   return (

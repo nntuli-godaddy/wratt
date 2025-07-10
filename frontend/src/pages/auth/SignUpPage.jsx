@@ -4,6 +4,7 @@ import { Box, Typography, Paper, useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
+import axios from 'axios'
 
 
 const StyledContainer = styled(Box)(({ theme }) => ({
@@ -35,11 +36,52 @@ const SignUpPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState('')
+  const [token, setToken] = useState('')
+
   const navigate = useNavigate();
 
-  const handleSignUp = () => {
-    // Add your signup logic here
-    navigate('/signin');
+  const handleSignUp = async (e) => {
+
+    e.preventDefault()
+    
+    if (!firstName || !lastName || !email || !password) {
+      setError('All fields must be filled in')
+      return
+    }
+
+    if (password !== confirmPassword) {
+      setError("Passwords must match")
+      return
+    }
+
+    setError('')
+
+    try {
+
+      const response = await axios.post('http://localhost:5000/api/auth/register', {
+        firstName,
+        lastName,
+        email,
+        password
+      })
+
+      setToken(response.data.token)
+      setError('Registration Sucessful')
+
+      localStorage.setItem('token', response.data.token)
+
+      navigate('/signin');
+
+
+    }
+    catch (error) {
+      console.log(error.message)
+      setError('Failed to register account')
+    }
+
+
+    
   };
 
   const handleSignIn = () => {
@@ -47,67 +89,70 @@ const SignUpPage = () => {
   };
 
   return (
-    <StyledContainer>
-      <StyledPaper>
-        <Typography variant="h3" component="h1" gutterBottom>
-          Create Account
-        </Typography>
-        <Typography variant="body1" color="text.secondary" gutterBottom>
-          Enter your details to create an account
-        </Typography>
+    <form onSubmit={handleSignUp}>
+      <StyledContainer>
+        <StyledPaper>
+          <Typography variant="h3" component="h1" gutterBottom>
+            Create Account
+          </Typography>
+          <Typography variant="body1" color="text.secondary" gutterBottom>
+            Enter your details to create an account
+          </Typography>
 
-        <Box sx={{ display: 'flex', gap: 2, width: '100%' }}>
+          <Box sx={{ display: 'flex', gap: 2, width: '100%' }}>
+            <CustomInput
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              placeholder="First Name"
+              sx={{ flex: 1 }}
+            />
+            <CustomInput
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              placeholder="Last Name"
+              sx={{ flex: 1 }}
+            />
+          </Box>
+
           <CustomInput
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            placeholder="First Name"
-            sx={{ flex: 1 }}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email Address"
+            type="email"
           />
+
           <CustomInput
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            placeholder="Last Name"
-            sx={{ flex: 1 }}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            type="password"
           />
-        </Box>
 
-        <CustomInput
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email Address"
-          type="email"
-        />
+          <CustomInput
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            placeholder="Confirm Password"
+            type="password"
+          />
 
-        <CustomInput
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          type="password"
-        />
-
-        <CustomInput
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          placeholder="Confirm Password"
-          type="password"
-        />
-
-        <CustomButton 
-          text="Create Account" 
-          onClick={handleSignUp}
-          fullWidth={true}
-        />
+          <CustomButton 
+            text="Create Account" 
+            onClick={handleSignUp}
+            fullWidth={true}
+            type='submit'
+          />
 
 
 
-        <Typography variant="body1" align="center">
-          Already have an account?{' '}
-          <Link to="/signin" style={{ textDecoration: 'none', color: theme.palette.primary.main }}>
-            Sign In
-          </Link>
-        </Typography>
-      </StyledPaper>
-    </StyledContainer>
+          <Typography variant="body1" align="center">
+            Already have an account?{' '}
+            <Link to="/signin" style={{ textDecoration: 'none', color: theme.palette.primary.main }}>
+              Sign In
+            </Link>
+          </Typography>
+        </StyledPaper>
+      </StyledContainer>
+    </form>
   );
 };
 

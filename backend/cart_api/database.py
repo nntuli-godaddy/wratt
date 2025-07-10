@@ -115,12 +115,12 @@ class DatabaseCartItem(BaseModel):
                 name="Standard SSL",
                 description="Your standard SSL certificate",
                 price=14.99,
-                is_on_sale=False,
+                is_on_sale=True,
                 sale_price=8.99,
                 quantity=2,
+                image_url="https://img1.wsimg.com/cdn/Image/All/AllChannelsFoS/1/en-US/c8d98599-46cc-412d-bbb5-d766bb0e5a05/Product-grid-SSL.jpg"
             ),
         ]
-        DatabaseProducts.bulk_create(cart_items)
 
 
 

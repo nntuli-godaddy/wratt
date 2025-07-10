@@ -11,7 +11,7 @@ function CartItem({
   image_url,
   price,
   quantity,
-  salePrice,
+  sale_price,
   is_on_sale,
   onRemoveFromCart,
   onIncrease,
@@ -35,7 +35,7 @@ function CartItem({
     >
       <CardMedia
         component="img"
-        sx={{ width: 250, pt: 2 }}
+        sx={{ width: 250, pt: 2}}
         image={image_url}
         alt={name}
       />
@@ -57,7 +57,7 @@ function CartItem({
               {is_on_sale ? (
                 <>
                   <Typography component="span" sx={{ color: '#d32f2f', fontWeight: 'bold', fontSize: 18 }}>
-                    ${salePrice} x {quantity}
+                    ${sale_price} x {quantity}
                   </Typography>
                   <Typography
                     component="span"
@@ -73,7 +73,7 @@ function CartItem({
               )}
 
               <Typography variant="body2" sx={{ mt: 1, color: 'gray' }}>
-                Subtotal: ${is_on_sale ? (salePrice * quantity).toFixed(2) : (price * quantity).toFixed(2)}
+                Subtotal: ${is_on_sale ? (sale_price * quantity).toFixed(2) : (price * quantity).toFixed(2)}
               </Typography>
             </Box>
 

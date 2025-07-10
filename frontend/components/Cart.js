@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
-import { Card, CardContent, CardActions, Button, Grid, Typography, CardMedia, Box } from '@mui/material'
+import { Card, CardContent, CardActions, Button, Grid, Typography, CardMedia, Box, Divider } from '@mui/material'
 import CartItem from './CartItem';
 
 
@@ -29,7 +29,6 @@ function Cart({
                 }
             });
     }
-<<<<<<< HEAD
     function handleIncrease(id) {
         setCartItems(prev =>
             prev.map(item =>
@@ -48,53 +47,83 @@ function Cart({
         );
     }
 
-=======
->>>>>>> origin/main
     const totalPrice = cartItems.map(item => item.price * item.quantity).reduce((a,b) => a + b, 0)
+    const totalItems = cartItems.map(item => item.quantity).reduce((a, b) => a + b, 0); //Total items
 
-  return (
-    <div>
-        <Grid container direction="column" spacing={3}>
-        {
-            cartItems.map(cartItem =>
-                <Grid item xs={6}>
-                <CartItem 
-                    name={cartItem.name}
-                    description={cartItem.description}
-                    id={cartItem.id}
-                    image_url={cartItem.image_url}
-                    price={cartItem.price}
-                    quantity={cartItem.quantity} 
-                    is_on_sale={cartItem.is_on_sale}
-                    salePrice={cartItem.salePrice}
-                    onRemoveFromCart={deleteItem}
-<<<<<<< HEAD
-                    onIncrease={handleIncrease}
-                    onDecrease={handleDecrease}
-=======
->>>>>>> origin/main
-                />
-                </Grid>
-            )}
-        </Grid>
-        <div style={{ paddingTop: "20px" }}>
-            <Card sx={{ p: 2 }}>
-                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <Typography variant="h4">
-<<<<<<< HEAD
-                    Total: <b>${totalPrice}</b>
-=======
-                    Subtotal: <b>${totalPrice}</b>
->>>>>>> origin/main
-                </Typography>
-                <Button variant="contained" color="primary">
-                    Proceed to Checkout
-                </Button>
-                </Box>
-            </Card>
-        </div>
-    </div>
-  );
+return (
+    
+  <Box
+    sx={{
+      display: 'flex', alignItems: 'flex-start', gap: 3, p: 2,
+    }}
+  >
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container direction="column" spacing={3}>
+        {cartItems.map(cartItem => (
+          <Grid item xs={12} key={cartItem.id}>
+            <CartItem 
+              {...cartItem}
+              onRemoveFromCart={deleteItem}
+              onIncrease={handleIncrease}
+              onDecrease={handleDecrease}
+            />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+
+    {/* Order summary widget fixed on the right */}
+    <Card
+            // OPTION 1: THE WIDGET OVERLAPS THE PRODUCTS
+      // sx={{
+      //   position: 'fixed',
+      //   top: 155,       
+      //   right: 20,     
+      //   width: 280,
+      //   p: 3,
+      //   borderRadius: 3,
+      //   boxShadow: 4,
+      //   backgroundColor: 'white',
+      //   zIndex: 1000,  
+      // }}
+            // OPTION 2: THE PRODUCTS MINIMIZES TO FIT THE WIDGET
+    sx={{
+    position: 'sticky',
+    top: 20,
+    alignSelf: 'flex-start',
+    width: 280,
+    p: 3,
+    borderRadius: 3,
+    boxShadow: 4,
+    backgroundColor: 'white',
+  }}
+    >
+      <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+        ORDER SUMMARY
+      </Typography>
+
+      <Divider sx={{ mb: 2 }} />
+
+      <Typography sx={{ mb: 1 }}>
+        Total items: <b>{totalItems}</b>
+      </Typography>
+
+      <Typography sx={{ mb: 1 }}>
+        Subtotal: <b>${totalPrice.toFixed(2)}</b>
+      </Typography>
+
+      <Divider sx={{ my: 2 }} />
+
+      <Typography variant="subtitle1" sx={{ mb: 3, fontWeight: 'bold' }}>
+        Estimated total: ${totalPrice.toFixed(2)}
+      </Typography>
+
+      <Button variant="contained" fullWidth>
+        Proceed to Checkout
+      </Button>
+    </Card>
+  </Box>
+);
 }
 
 export default Cart;

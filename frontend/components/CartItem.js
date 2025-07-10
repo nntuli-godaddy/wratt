@@ -11,7 +11,7 @@ function CartItem({
   image_url,
   price,
   quantity,
-  salePrice,
+  sale_price,
   is_on_sale,
   onRemoveFromCart,
   onIncrease,
@@ -23,7 +23,7 @@ function CartItem({
         display: 'flex',
         p: 2,
         mb: 3,
-        alignItems: 'flex-start',
+        alignItems: 'center',
         borderRadius: 3,
         boxShadow: 3,
         transition: '0.3s',
@@ -57,7 +57,7 @@ function CartItem({
               {is_on_sale ? (
                 <>
                   <Typography component="span" sx={{ color: '#d32f2f', fontWeight: 'bold', fontSize: 18 }}>
-                    ${salePrice} x {quantity}
+                    ${sale_price} x {quantity}
                   </Typography>
                   <Typography
                     component="span"
@@ -73,7 +73,7 @@ function CartItem({
               )}
 
               <Typography variant="body2" sx={{ mt: 1, color: 'gray' }}>
-                Subtotal: ${is_on_sale ? (salePrice * quantity).toFixed(2) : (price * quantity).toFixed(2)}
+                Subtotal: ${is_on_sale ? (sale_price * quantity).toFixed(2) : (price * quantity).toFixed(2)}
               </Typography>
             </Box>
 

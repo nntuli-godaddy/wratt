@@ -25,9 +25,6 @@ export const CartPage = () => (
     <div style={{ padding: "20px" }}>
       <Link href="/shop" style ={{color: 'black'}} fontWeight={100} fontSize={100}>Continue shopping</Link>
     </div>
-    <div style = {{ padding: "20px" }}>
-      <CartItem {...testItem} />
-    </div>
     <Cart />
   </Container>
 );

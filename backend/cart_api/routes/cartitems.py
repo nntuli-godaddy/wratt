@@ -19,9 +19,27 @@ class CartItems:
 
     def on_post(self, req, resp):
         user_item = req.media
+        if (DatabaseCartItem.get_or_none(DatabaseCartItem.name==user_item.get("name"))):
+            existing_item = DatabaseCartItem.get(DatabaseCartItem.name == user_item['name'])
+            existing_item.quantity += 1
+            existing_item.save()
+            resp.media = {
+                "code": "duplicate item update",
+                "message": "correctly updating",
+                "item": model_to_dict(existing_item)
+            }
+            resp.status = falcon.HTTP_200
+            return
         new_item = DatabaseCartItem.create(**user_item)
         resp.media = model_to_dict(new_item)
         resp.status = falcon.HTTP_201
+
+
+
+
+
+
+
 
 
 class CartItem:

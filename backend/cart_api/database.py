@@ -3,6 +3,7 @@ __author__ = "Andrew Williamson <axwilliamson@godaddy.com>"
 import inspect
 import os
 import sys
+import datetime
 from playhouse.postgres_ext import (
     PostgresqlDatabase,
     PostgresqlExtDatabase,
@@ -11,7 +12,8 @@ from playhouse.postgres_ext import (
     CharField,
     DoubleField,
     BooleanField,
-    IntegerField
+    IntegerField,
+    DateTimeField
 )
 
 database = os.environ.get("POSTGRES_DB", "bootcamp")
@@ -24,10 +26,25 @@ ext_db = PostgresqlExtDatabase(database, user=user, password=password, host=host
 
 
 class BaseModel(Model):
+    def save(self, *args, **kwargs):
+        if hasattr(self, "updated_at"):
+            self.updated_at = datetime.datetime.utcnow()
+        return super().save(*args, **kwargs)
+
     class Meta:
+        #database = ext_db
         database = PostgresqlDatabase(
             database, user=user, password=password, host=hostname, autorollback=True
         )
+
+class DatabaseUser(BaseModel):
+    id = AutoField()
+    first_name = CharField(max_length=50)
+    last_name = CharField(max_length=50)
+    email = CharField(max_length=100, unique=True)
+    password_hash = CharField(max_length=255)
+    created_at = DateTimeField(default=datetime.datetime.utcnow)
+    updated_at = DateTimeField(default=datetime.datetime.utcnow)
 
 
 class DatabaseProducts(BaseModel):

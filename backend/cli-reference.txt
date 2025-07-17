@@ -1,6 +1,3 @@
-# IF YOU'D LIKE TO WORK IN THE TERMINAL, PLS READ IF YOU WANT.
-# (OPTIONAL)
-
 # Here is a reference sheet for various Command-Line-Interface commands you will be running during this project
 # the hash (#) indicates a comment, lines without it are valid commands
 # Pressing CMD+X will terminate whatever is running in your terminal, some things wont stop running unless you terminate them

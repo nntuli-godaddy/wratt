@@ -4,7 +4,7 @@ import Head from '../components/head';
 
 export const IndexPage = (props) => (
   <div>
-    <Head title='Home'/>
+    <Head/>
     <h1>HIIIIIIIIIIIIII</h1>
   </div>
 );

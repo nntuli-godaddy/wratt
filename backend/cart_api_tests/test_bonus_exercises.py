@@ -46,7 +46,6 @@ class MyTestYay(TestClient):
     def test_duplicate_product(self):
         name = "iPhone 14 Pro Max"
         self.preclean_product(name) # hope this works
-
         data = {
             "name":        name,
             "description": "expensive ass phone",
@@ -55,7 +54,6 @@ class MyTestYay(TestClient):
             "is_on_sale":  False,
             "sale_price":  None,
         }
-
         # first POST (no error)
         resp1 = self.simulate_post(f"{PRODUCTS_PATH}", json=data)
         self.assertEqual(resp1.status_code, 201)

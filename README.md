@@ -2,6 +2,8 @@
 
 ## (JAVIER'S BRANCH)
 
+im done
+
 ## NEW CHANGES:
 You are now able to run `docker compose up --build` in root and start up both the API and server!!!
 No need to make two separate terminals! YES.

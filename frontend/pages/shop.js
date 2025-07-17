@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from '../components/head';
 import Link from 'next/link';
-import ShopItemList from '../components/ShopItemList';
+import ShopItemList from '../components/OldShopItemList';
 
 import { Container, Typography } from '@mui/material'
 

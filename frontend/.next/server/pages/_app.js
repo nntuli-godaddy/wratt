@@ -16,10 +16,10 @@ exports.modules = {
 /*!***********************!*\
   !*** ./pages/_app.js ***!
   \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _mui_material_nextjs_v13_pagesRouter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material-nextjs/v13-pagesRouter */ \"@mui/material-nextjs/v13-pagesRouter\");\n/* harmony import */ var _mui_material_nextjs_v13_pagesRouter__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_mui_material_nextjs_v13_pagesRouter__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles.css */ \"./styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _fontsource_roboto_300_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fontsource/roboto/300.css */ \"./node_modules/@fontsource/roboto/300.css\");\n/* harmony import */ var _fontsource_roboto_300_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fontsource_roboto_300_css__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _fontsource_roboto_400_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fontsource/roboto/400.css */ \"./node_modules/@fontsource/roboto/400.css\");\n/* harmony import */ var _fontsource_roboto_400_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fontsource_roboto_400_css__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _fontsource_roboto_500_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fontsource/roboto/500.css */ \"./node_modules/@fontsource/roboto/500.css\");\n/* harmony import */ var _fontsource_roboto_500_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_fontsource_roboto_500_css__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _fontsource_roboto_700_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fontsource/roboto/700.css */ \"./node_modules/@fontsource/roboto/700.css\");\n/* harmony import */ var _fontsource_roboto_700_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_fontsource_roboto_700_css__WEBPACK_IMPORTED_MODULE_8__);\n\n\n\nconst { nextRedux  } = __webpack_require__(/*! ../redux/store */ \"./redux/store.js\");\n\n\n\n\n\n\nfunction WrappedApp({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n        ...pageProps\n    }, void 0, false, {\n        fileName: \"/Users/zsundrani/Desktop/GoDaddy_Bootcamp/group_working_page/wratt/frontend/pages/_app.js\",\n        lineNumber: 12,\n        columnNumber: 10\n    }, this);\n}\nWrappedApp.propTypes = {\n    Component: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().elementType),\n    pageProps: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([\n    nextRedux.withRedux\n].reduce((cmp, hoc)=>hoc(cmp), WrappedApp));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUEwQjtBQUNTO0FBQ25DLE1BQU0sRUFBRUUsVUFBUyxFQUFFLEdBQUdDLG1CQUFPQSxDQUFDO0FBQzBDO0FBQ2xEO0FBQ2M7QUFDQTtBQUNBO0FBQ0Q7QUFFbkMsU0FBU0UsV0FBVyxFQUFFQyxVQUFTLEVBQUVDLFVBQVMsRUFBRSxFQUFFO0lBQzVDLHFCQUFPLDhEQUFDRDtRQUFZLEdBQUdDLFNBQVM7Ozs7OztBQUNsQztBQUVBRixXQUFXRyxTQUFTLEdBQUc7SUFDckJGLFdBQVdMLCtEQUFxQjtJQUNoQ00sV0FBV04sMERBQWdCO0FBQzdCO0FBRUEsaUVBQWU7SUFDYkMsVUFBVVMsU0FBUztDQUNwQixDQUFDQyxNQUFNLENBQUMsQ0FBQ0MsS0FBS0MsTUFBUUEsSUFBSUQsTUFBTVIsV0FBV0EsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2Jvb3RjYW1wLXNob3BwaW5nLWNhcnQvLi9wYWdlcy9fYXBwLmpzP2UwYWQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5jb25zdCB7IG5leHRSZWR1eCB9ID0gcmVxdWlyZSgnLi4vcmVkdXgvc3RvcmUnKTtcbmltcG9ydCB7IEFwcENhY2hlUHJvdmlkZXIgfSBmcm9tICdAbXVpL21hdGVyaWFsLW5leHRqcy92MTMtcGFnZXNSb3V0ZXInO1xuaW1wb3J0ICcuLi9zdHlsZXMuY3NzJ1xuaW1wb3J0ICdAZm9udHNvdXJjZS9yb2JvdG8vMzAwLmNzcyc7XG5pbXBvcnQgJ0Bmb250c291cmNlL3JvYm90by80MDAuY3NzJztcbmltcG9ydCAnQGZvbnRzb3VyY2Uvcm9ib3RvLzUwMC5jc3MnO1xuaW1wb3J0ICdAZm9udHNvdXJjZS9yb2JvdG8vNzAwLmNzcydcblxuZnVuY3Rpb24gV3JhcHBlZEFwcCh7IENvbXBvbmVudCwgcGFnZVByb3BzIH0pIHtcbiAgcmV0dXJuIDxDb21wb25lbnQgeyAuLi5wYWdlUHJvcHMgfSAvPjtcbn1cblxuV3JhcHBlZEFwcC5wcm9wVHlwZXMgPSB7XG4gIENvbXBvbmVudDogUHJvcFR5cGVzLmVsZW1lbnRUeXBlLFxuICBwYWdlUHJvcHM6IFByb3BUeXBlcy5vYmplY3Rcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFtcbiAgbmV4dFJlZHV4LndpdGhSZWR1eCxcbl0ucmVkdWNlKChjbXAsIGhvYykgPT4gaG9jKGNtcCksIFdyYXBwZWRBcHApO1xuIl0sIm5hbWVzIjpbIlJlYWN0IiwiUHJvcFR5cGVzIiwibmV4dFJlZHV4IiwicmVxdWlyZSIsIkFwcENhY2hlUHJvdmlkZXIiLCJXcmFwcGVkQXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwicHJvcFR5cGVzIiwiZWxlbWVudFR5cGUiLCJvYmplY3QiLCJ3aXRoUmVkdXgiLCJyZWR1Y2UiLCJjbXAiLCJob2MiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _mui_material_nextjs_v15_pagesRouter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material-nextjs/v15-pagesRouter */ \"@mui/material-nextjs/v15-pagesRouter\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_css__WEBPACK_IMPORTED_MODULE_4__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_mui_material_nextjs_v15_pagesRouter__WEBPACK_IMPORTED_MODULE_3__]);\n_mui_material_nextjs_v15_pagesRouter__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\nconst { nextRedux  } = __webpack_require__(/*! ../redux/store */ \"./redux/store.js\");\n\n\n// import '@fontsource/roboto/300.css';\n// import '@fontsource/roboto/400.css';\n// import '@fontsource/roboto/500.css';\n// import '@fontsource/roboto/700.css'\nfunction WrappedApp({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_mui_material_nextjs_v15_pagesRouter__WEBPACK_IMPORTED_MODULE_3__.AppCacheProvider, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n            ...pageProps\n        }, void 0, false, {\n            fileName: \"/Users/zsundrani/Desktop/cart/shopping-cart/frontend/pages/_app.js\",\n            lineNumber: 14,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/Users/zsundrani/Desktop/cart/shopping-cart/frontend/pages/_app.js\",\n        lineNumber: 13,\n        columnNumber: 5\n    }, this);\n}\nWrappedApp.propTypes = {\n    Component: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().elementType),\n    pageProps: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([\n    nextRedux.withRedux\n].reduce((cmp, hoc)=>hoc(cmp), WrappedApp));\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUEwQjtBQUNTO0FBQ25DLE1BQU0sRUFBRUUsVUFBUyxFQUFFLEdBQUdDLG1CQUFPQSxDQUFDO0FBQzBDO0FBQzFDO0FBQzlCLHVDQUF1QztBQUN2Qyx1Q0FBdUM7QUFDdkMsdUNBQXVDO0FBQ3ZDLHNDQUFzQztBQUV0QyxTQUFTRSxXQUFXLEVBQUVDLFVBQVMsRUFBRUMsVUFBUyxFQUFFLEVBQUU7SUFDNUMscUJBQ0UsOERBQUNILGtGQUFnQkE7a0JBQ2YsNEVBQUNFO1lBQVksR0FBR0MsU0FBUzs7Ozs7Ozs7Ozs7QUFHL0I7QUFFQUYsV0FBV0csU0FBUyxHQUFHO0lBQ3JCRixXQUFXTCwrREFBcUI7SUFDaENNLFdBQVdOLDBEQUFnQjtBQUM3QjtBQUVBLGlFQUFlO0lBQ2JDLFVBQVVTLFNBQVM7Q0FDcEIsQ0FBQ0MsTUFBTSxDQUFDLENBQUNDLEtBQUtDLE1BQVFBLElBQUlELE1BQU1SLFdBQVdBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ib290Y2FtcC1zaG9wcGluZy1jYXJ0Ly4vcGFnZXMvX2FwcC5qcz9lMGFkIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnO1xuY29uc3QgeyBuZXh0UmVkdXggfSA9IHJlcXVpcmUoJy4uL3JlZHV4L3N0b3JlJyk7XG5pbXBvcnQgeyBBcHBDYWNoZVByb3ZpZGVyIH0gZnJvbSAnQG11aS9tYXRlcmlhbC1uZXh0anMvdjE1LXBhZ2VzUm91dGVyJztcbmltcG9ydCAnLi4vc3R5bGVzL3N0eWxlcy5jc3MnO1xuLy8gaW1wb3J0ICdAZm9udHNvdXJjZS9yb2JvdG8vMzAwLmNzcyc7XG4vLyBpbXBvcnQgJ0Bmb250c291cmNlL3JvYm90by80MDAuY3NzJztcbi8vIGltcG9ydCAnQGZvbnRzb3VyY2Uvcm9ib3RvLzUwMC5jc3MnO1xuLy8gaW1wb3J0ICdAZm9udHNvdXJjZS9yb2JvdG8vNzAwLmNzcydcblxuZnVuY3Rpb24gV3JhcHBlZEFwcCh7IENvbXBvbmVudCwgcGFnZVByb3BzIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8QXBwQ2FjaGVQcm92aWRlcj5cbiAgICAgIDxDb21wb25lbnQgeyAuLi5wYWdlUHJvcHMgfSAvPlxuICAgIDwvQXBwQ2FjaGVQcm92aWRlcj5cbiAgKTtcbn1cblxuV3JhcHBlZEFwcC5wcm9wVHlwZXMgPSB7XG4gIENvbXBvbmVudDogUHJvcFR5cGVzLmVsZW1lbnRUeXBlLFxuICBwYWdlUHJvcHM6IFByb3BUeXBlcy5vYmplY3Rcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFtcbiAgbmV4dFJlZHV4LndpdGhSZWR1eCxcbl0ucmVkdWNlKChjbXAsIGhvYykgPT4gaG9jKGNtcCksIFdyYXBwZWRBcHApO1xuIl0sIm5hbWVzIjpbIlJlYWN0IiwiUHJvcFR5cGVzIiwibmV4dFJlZHV4IiwicmVxdWlyZSIsIkFwcENhY2hlUHJvdmlkZXIiLCJXcmFwcGVkQXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwicHJvcFR5cGVzIiwiZWxlbWVudFR5cGUiLCJvYmplY3QiLCJ3aXRoUmVkdXgiLCJyZWR1Y2UiLCJjbXAiLCJob2MiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
 
 /***/ }),
 
@@ -34,50 +34,10 @@ eval("\nconst { configureMakeStore , getOrCreateStore  } = __webpack_require__(/
 
 /***/ }),
 
-/***/ "./node_modules/@fontsource/roboto/300.css":
-/*!*************************************************!*\
-  !*** ./node_modules/@fontsource/roboto/300.css ***!
-  \*************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/roboto/400.css":
-/*!*************************************************!*\
-  !*** ./node_modules/@fontsource/roboto/400.css ***!
-  \*************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/roboto/500.css":
-/*!*************************************************!*\
-  !*** ./node_modules/@fontsource/roboto/500.css ***!
-  \*************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/@fontsource/roboto/700.css":
-/*!*************************************************!*\
-  !*** ./node_modules/@fontsource/roboto/700.css ***!
-  \*************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./styles.css":
-/*!********************!*\
-  !*** ./styles.css ***!
-  \********************/
+/***/ "./styles/styles.css":
+/*!***************************!*\
+  !*** ./styles/styles.css ***!
+  \***************************/
 /***/ (() => {
 
 
@@ -92,17 +52,6 @@ eval("\nconst { configureMakeStore , getOrCreateStore  } = __webpack_require__(/
 
 "use strict";
 module.exports = require("@gasket/redux");
-
-/***/ }),
-
-/***/ "@mui/material-nextjs/v13-pagesRouter":
-/*!*******************************************************!*\
-  !*** external "@mui/material-nextjs/v13-pagesRouter" ***!
-  \*******************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@mui/material-nextjs/v13-pagesRouter");
 
 /***/ }),
 
@@ -158,6 +107,17 @@ module.exports = require("react");
 
 "use strict";
 module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "@mui/material-nextjs/v15-pagesRouter":
+/*!*******************************************************!*\
+  !*** external "@mui/material-nextjs/v15-pagesRouter" ***!
+  \*******************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("@mui/material-nextjs/v15-pagesRouter");;
 
 /***/ })
 
